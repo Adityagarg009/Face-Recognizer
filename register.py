@@ -6,7 +6,7 @@ cam=cv.VideoCapture(0)
 Id = int(input("enter your id number"))
 Name = input("Enter your name")
 df2 = pd.Dataframe({"Id": [Id], "Name": [Name]})
-df = pd.concat([ df, df2]).drop_duplicates(),reset_index(drop=True)
+df = pd.concat([df, df2]).drop_duplicates(),df.reset_index(drop=True)
 df.to_csv("content\oye.csv",index=False)
 sampleNum = 0
 while True:
